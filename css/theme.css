@@ -1,0 +1,515 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 8, 2020, 2:28:20 PM
+    Author     : frontend
+*/
+
+
+html{
+    font-size: 16px; /* 1rem*/
+}
+
+img{
+    max-width: 100%;
+}
+
+.image-placeholder{
+    position: relative;
+    overflow: hidden;
+}
+.image-placeholder:after{
+    content: '';
+    display: block;
+    padding-top: 56.62%;
+}
+.image-placeholder img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.size-1by1:after{
+    padding-top: 100%;
+}
+
+.size-4by3:after{
+    padding-top: 75%;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #999;
+
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+
+    font-family: 'Montserrat', sans-serif;
+} 
+.title-description{
+
+    font-family: 'Kaushan Script', cursive;
+
+}
+
+.title-text{
+    color: #999;
+}
+
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+/* HEADER*/
+
+.nav-item{    
+    margin-left: 42px;
+}
+
+.nav-link .fas{   /* obrisi .fas ako smatras da ce biti bolje iscentriran search i shopping-cart*/
+    display: inline !important;
+    text-decoration: none;
+}
+
+header .navbar-toggler span{
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+header .navbar-toggler span:last-of-type{
+    margin-bottom: 0;
+
+}
+
+header .navbar-white .navbar-nav .nav-link{
+    font-size: 14px;
+    color:#fff;
+    text-align: center;
+    text-transform: uppercase;
+} 
+header .navbar-white .navbar-nav .nav-link:hover,
+header .navbar-white .navbar-nav .nav-link.active{
+    border-bottom: 1px solid #fff;
+    display: block;
+}
+
+/*HERO - carousel- */
+
+h1{
+    font-size: 50px;
+    font-weight: 700;
+
+}
+
+.hero-title-description{
+    font-size: 30px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.hero .carousel-item{
+    padding: 200px 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+
+.hero-title:after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #fff;    
+}
+
+.text-center .hero-title:after {
+    margin: 71px auto;
+
+}
+
+.btn-outline-warning {
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-outline-warning:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+
+
+.carousel-indicators > li,
+.carousel-indicators > li.active{
+    color: #fff;
+    width: 280px;
+    height: 45px;
+    border-top: solid 1px grey;
+    text-indent: 0;
+    margin-left: 30px;
+}
+.carousel-indicators > li{
+    background: transparent;
+}
+
+.carousel-indicators > li:hover{
+    transition: linear
+}
+
+/* ABOUT SECTION */
+
+.about-title-description{
+
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+
+}
+
+
+.about-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.about-title:after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #F38181;    
+}
+
+.text-center .about-title:after {
+    margin: 60px auto;
+
+}
+
+
+
+/* ACHIEVEMENTS */
+
+
+.achievements{
+    padding: 100px 0;
+}
+
+
+.achievements .achievements-item .achievements-value{
+    font-size: 72px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+}
+.achievements .achievements-item .achievements-description{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* SERVICES */
+
+
+.amazing-service .amazing-service-item-icon{
+    color: #95E1D3;
+    font-size: 32px;
+
+}
+
+.amazing-service .section-title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+.amazing-service p{
+    color: #999999;
+}
+
+
+
+/* ABOUT */
+
+.about .about-item{
+    position: relative;
+
+}
+
+about .about-item:hover{
+    opacity: 0.5;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.accordion-icon{
+    color: #95E1D3;
+    height: 32px;
+    width: 32px;
+    padding: 7px;
+}
+
+.accordion-body{
+    padding: 0rem 1.25rem !important;
+    overflow: auto;
+}
+
+
+
+.about .about-item{
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about .about-item .about-item-img{
+    position: relative;
+}
+
+.about .about-item .about-item-img img{
+    display: block;
+    width: 100%;
+}
+
+.about .about-item .hover{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background: #95E1D3;
+    opacity: 0.9;
+    color:#fff;
+    display: none;
+
+}
+
+.about .about-item:hover .hover{
+    display: block;
+}
+.about-item .hover p{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    max-height: 60px;
+    overflow: hidden;
+}
+.about-item .hover a.fab{
+    color:#fff;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    border:1px solid #fff;
+    border-radius: 50%;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s linear;
+}
+.about-item .hover a.fab:hover{
+    color: #95E1D3;
+    background: #fff;
+}
+
+.about .about-item a{
+    color:#fff;
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+.about .about-item a:hover{
+    color:#fff;
+}
+
+/*TEAM*/
+
+
+.team-item .p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px; 
+}
+
+
+.team .team-item .team-item-img{
+    position: relative;
+}
+
+.team .team-item .team-item-img img{
+    display: block;
+    width: 100%;
+}
+
+.team .team-item .hover{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background: #E84C3D;
+    color:#fff;
+    text-align: center;
+    display: none;
+
+}
+
+.team .team-item:hover .hover{
+    display: block;
+}
+
+.team .team-item .hover p{
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 20px;
+    max-height: 60px;
+    overflow: hidden;
+}
+
+.team-item .hover a.fab{
+    color:#fff;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    border:1px solid #fff;
+    border-radius: 50%;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+
+.team-item .hover a.fab:hover{
+    color:#E84C3D;
+    background: #fff;
+}
+
+/* client-quotas section*/
+
+.clients-section{
+    margin-top:100px;
+    border:1px solid #d5d5d5;
+    box-shadow: 1px 1px 15px #000;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    font-size:22px;
+}
+.box-sectiopn i{
+    font-size:40px;
+    padding-top:35px; 
+}
+.box-sectiopn{
+    cursor: pointer;
+}
+.box-sectiopn:hover i{
+    font-size: 60px;
+    transition: 0.5s;
+}
+
+
+/*Blog section*/
+
+
+.blog{
+    padding: 120px 0;
+}
+
+.blog .section-description{
+    margin-bottom: 105px;
+}
+
+.blog .blog-item-image{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.blog .blog-item-image .hover{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    display: none !important;
+}
+
+.blog .blog-item{
+    text-align: center !important;
+}
+
+.blog .blog-item:hover .blog-item-image .hover{
+    display: flex !important;
+}
+
+.blog .blog-item-image .hover a{
+    
+    width: 48px;
+    height: 48px;
+    border: 2px solid #fff;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none; 
+    border-radius: 50%;
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+.blog .blog-item .blog-item-title{
+    color: #222;
+    font-weight: 300;
+    text-align: center !important;
+}
+
+.contact a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+footer .social a{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border:2px solid #0c63e4;
+    color:#0c63e4;
+    font-size: 24px;
+    line-height: 44px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s linear;
+}
+
+footer .social a:hover{
+    transform: translateY(-5px);
+    background: #fff;
+    color:#0c63e4;
+}
+
+
+
+
+
+
+
+
+
